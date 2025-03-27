@@ -19,4 +19,16 @@ public class StationTest {
 
         assertThat(station.getName(), is(name));
     }
+
+    @Test
+    @DisplayName("It should return the city attribute")
+    void test_should_return_city_of_station(){
+
+        String name = "Ogrimmar";
+        String city = "California";
+
+        Station station = new Station(name, city);
+
+        assertThat(station.getCity(), is(city));
+    }
 }
